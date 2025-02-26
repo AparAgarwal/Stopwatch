@@ -1,0 +1,126 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #1a1a1a;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4f4f4f;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #333;
+}
+
+#heading{
+    font-size: 72px;
+    margin: 10px;
+    text-align: center;
+    color: #a1a1a1;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#hour, #minute, #second, #millisecond{
+    background-color: #060606;
+    color: #e8e8e8;
+    padding: 10px;
+    margin: 5px;
+    font-size: 120px;
+    width: 160px;
+    text-align: center;
+    border-radius: 15px;
+}
+#buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+button{
+    border: none;
+    background-color: #4870ff;
+    width: 200px;
+    color: white;
+    padding: 10px 20px;
+    font-size: larger;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: #263e93;
+    cursor: pointer;
+}
+
+#marked {
+    display: none;
+    margin: 20px;
+    background-color: #222;
+    color: #1a1a1a;
+    width: 750px;
+    height: 0;
+    padding: 0;
+    opacity: 0;
+    border-radius: 5px;
+    overflow: auto;
+    transition: all 0.5s ease;
+}
+
+#marked.show {
+    display: block;
+    min-height: 100px;
+    padding: 15px;
+    opacity: 1;
+}
+
+#marked div{
+    padding: 2px 10px;
+    background-color: #333;
+    color: #e8e8e8;
+    margin: 4px;
+    border-radius: 5px;
+}
+h4 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.counter{
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+}
+.time{
+    display: inline-block;
+    width: 150px;
+}
+
+.saved {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.7s ease;
+}
+
+.saved.show {
+    opacity: 1;
+    transform: translateY(0);
+}
