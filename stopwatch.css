@@ -12,6 +12,7 @@ body{
 
 ::-webkit-scrollbar {
     width: 5px;
+    height: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -29,15 +30,13 @@ body{
 }
 
 #heading{
-    font-size: 72px;
+    font-size: 84px;
     margin: 10px;
     text-align: center;
     color: #a1a1a1;
 }
 #container{
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 20px;
 }
 
@@ -51,12 +50,11 @@ body{
     text-align: center;
     border-radius: 15px;
 }
+
 #buttons{
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin: 20px;
 }
+
 button{
     border: none;
     background-color: #4870ff;
@@ -65,6 +63,7 @@ button{
     padding: 10px 20px;
     font-size: larger;
     border-radius: 5px;
+    margin: 20px 5px;
 }
 button:hover{
     background-color: #263e93;
@@ -106,12 +105,12 @@ h4 {
 }
 .counter{
     display: inline-block;
-    width: 40px;
+    width: 50px;
     text-align: center;
 }
 .time{
     display: inline-block;
-    width: 150px;
+    width: 200px;
 }
 
 .saved {
@@ -123,4 +122,91 @@ h4 {
 .saved.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+    #heading{
+        font-size: 48px;
+    }
+    #hour, #minute, #second, #millisecond{
+        width: 80px;
+        font-size: 64px;
+    }
+    button{
+        width: 100px;
+        font-size: medium;
+    }
+    #marked{
+        width: 300px;
+    }
+    #marked.show{
+        height: 120px;
+    }
+    #marked div{
+        font-size: 10px;
+    }
+    .counter{
+        width: 20px;
+    }
+    .time{
+        width: 90px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    #heading{
+        font-size: 64px;
+    }
+    #hour, #minute, #second, #millisecond{
+        width: 90px;
+        font-size: 70px;
+    }
+    button{
+        width: 140px;
+        font-size: medium;
+    }
+    #marked{
+        width: 450px;
+    }
+    #marked.show{
+        height: 120px;
+    }
+    #marked div{
+        font-size: 12px;
+    }
+    .counter{
+        width: 25px;
+    }
+    .time{
+        width: 120px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    #heading{
+        font-size: 72px;
+    }
+    #hour, #minute, #second, #millisecond{
+        width: 130px;
+        font-size: 100px;
+    }
+    button{
+        width: 170px;
+        font-size: large;
+    }
+    #marked{
+        width: 600px;
+    }
+    #marked.show{
+        height: 120px;
+    }
+    #marked div{
+        font-size: 20px;
+    }
+    .counter{
+        width: 40px;
+    }
+    .time{
+        width: 200px;
+    }
 }
