@@ -4,4 +4,4 @@
 
 ### Simple stopwatch created using HTML, CSS and JavaScript.
 
-#### https://github.com/AparAgarwal/Stopwatch
+#### [Click here for preview](https://aparagarwal.github.io/Stopwatch/)
